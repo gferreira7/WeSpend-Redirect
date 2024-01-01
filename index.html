@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // JavaScript to parse query params and redirect
+      function redirectToApp() {
+        const params = new URLSearchParams(window.location.search)
+        const notificationId = params.get("notificationId")
+        window.location.replace(`wespend://notifications/${notificationId}`)
+      }
+      window.onload = redirectToApp
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
