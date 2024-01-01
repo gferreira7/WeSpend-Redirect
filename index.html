@@ -7,7 +7,7 @@
       function redirectToApp() {
         const params = new URLSearchParams(window.location.search)
         const notificationId = params.get("notificationId")
-        window.location.replace(`wespend://notifications/${notificationId}`)
+        window.location.replace(`wespend://main/notifications/${notificationId}`)
       }
       window.onload = redirectToApp
     </script>
